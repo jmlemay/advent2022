@@ -1,3 +1,2 @@
-f:{sum each(0,where null j)_j:"J"$read0`:input.txt}
-g:{max f[]}
-h:{sum 3#desc f[]}
+getVals:{sum each(0,where null j)_j:"J"$read0`:input.txt}
+f:{(first v;sum v:3#v:desc getVals[])}
